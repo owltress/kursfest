@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body, html {
+	width: 100%;
+	background: #f8f9fa;
+	font-family: 'Poppins', sans-serif;
+	color: #1e0a3d;
+} 
+
+a {
+	color: #f8f9fa;
+}
+
+a:hover, a:focus {
+	color: #FFD700;
+	text-decoration: none;
+	outline: 0;
+}
+
+/********1 Файл-О нас*******/
+/*Меню*/
+.navbar-brand {
+	color: white !important;
+}
+.navbar-brand img {
+	width: 120px;
+	padding-left: 5px;
+}
+
+.navbar-nav li {
+	padding-right: 40px;
+}
+
+.nav-link {
+	color: white !important;
+	font-size: 1.1em !important}
+
+.bg-light nav {
+	background-color: #1e0a3d !important;
+}
+.navbar button {
+	margin-left: 100px;
+	filter: invert()
+}
+.collapse a:hover, a:focus {
+	color: #FFD700 !important;
+	text-decoration: none;
+	outline: 0;
+}
+
+/*Картинка шапки*/
+
+#fixed {
+	height: 350px;
+	border-top: 4px solid #FFD700;
+	border-bottom: 4px solid #FFD700;
+	background: url("../images/1.jpg") no-repeat center center fixed;
+	background-blend-mode: multiply;
+	background-color: #6b43a8;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+/*Тёмная сторона силы*/  
+  
+[data-theme="dark"] {
+  background-color: #120A1E !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #120A1E !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #120A1E !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .container-fluid, .polaroid {
+  background-color: #120A1E !important;
+
+}
+
+[data-theme="dark"] .card {
+  color: #120A1E !important;
+    border-color: #120A1E;
+  background-color: #120A1E !important;
+
+}
+
+[data-theme="dark"] .container-fluid .jumbotron{
+  background-color: #120A1E !important;
+}
+
+[data-theme="dark"] .nav-link{
+ color: white !important;
+}
+
+
+/* Блок приветствие*/
+.jumbotron {
+	padding: 1em;
+	border-radius: 0;
+	margin-top: 2em;
+}
+
+.padding {
+	padding-bottom: 2em;
+}
+
+.alert {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+.alert hr {
+	border-top: 2px solid #FFD700;
+	width: 100%;
+	margin-top: 0.3em;
+	margin-bottom: 1em;
+}
+
+@media (min-width: 720px) {
+    .offset-lg-1 .img-fluid {
+		box-shadow: -10px 10px #FFD700;
+	}
+	.card {
+		margin: 50px;
+	}
+}
+
+
+
+@media (max-width: 720px) {
+	.col-12 .display-4 {
+		font-size: 2em;
+	}
+	.col-12 .lead {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 450px) {
+	.col-12 .display-4 {
+		font-size: 1.8em;
+	}
+	.col-12 .lead {
+		font-size: 1em;
+	}
+	.card {
+		margin-top: 50px;
+	
+
+	}
+
+}
+
+/*Блок с картинкой*/
+.offset-lg-1 .img-fluid {
+	width: auto;
+	height: 500px;
+}
+.offset-lg-1 img {
+	border: 1px solid #FFD700;
+
+}
+
+.row .col-lg-6 {
+	padding-top: 2em;
+}
+
+
+/*Карточки*/
+
+.move {
+	margin: 0px;
+	padding: 0px;
+	height: 250px;
+
+}
+
+.move img {
+
+	height: 100%;
+	border: 1px solid #FFD700;
+}
+
+.move:hover img {
+	opacity: 0.5;
+	transition: 1s ;
+    filter: alpha(opacity=50);
+}
+
+
+* {box-sizing: border-box}
+
+
+.container {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	max-width: 400px;
+}
+
+
+.img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); 
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 1s ease;
+	text-align: center;
+}
+
+
+.container:hover .overlay {
+	opacity: 1;
+	height: 50%;
+}
+
+.text {
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+ /*Футер сайта*/
+ footer {
+	background-color: #1e0a3d;
+	padding-top: 10px;
+	border-top: 3px solid #FFD700;
+	color: white;
+	font-size: 15px;
+}
+
+footer span {
+	margin-left: 15px;
+}
+
+footer a{
+	color: #ffe8a1;
+}
+
+/******2 файл-Галерея***************/
+
+.rows {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 8px;
+    border: 1px solid #FFD700;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.work-grid {
+	padding: 1.5px;
+}
+.work-grid img:hover {
+	opacity: 0.6;
+}
+
+/*Страница 3 - Советы*/
+
+div.polaroid {
+  background-color: #1e0a3d;
+  color: white;
+  box-shadow: 0 4px 8px 0 #FFD700, 0 6px 20px 0 #FFD745;
+  margin-bottom: 25px;
+}
+/*Карточки*/
+div.containers {
+  text-align: center;
+
+}
+
+.polaroid img {
+	max-height: 250px;
+	max-width: 400px;
+	border: 1px solid #FFD700;
+}
+
+.polaroid img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/*Карточки 3D*/
+
+
+.yoy img {
+
+  margin: 0px;
+  padding: 0px;
+  height: 360px;
+  width: 100%;
+  border: 1px solid #FFD700;
+
+}
+
+
+}
+.wrap {
+  position: absolute;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+
+  height: 360px;
+
+  perspective: 1000px;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.back span {
+	padding: 10px;
+}
+
+.back {
+  background-color: #FFD700;
+  transform: rotateY(180deg);
+}
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+
+
+
+/* Сайт-4 Мероприятия*/
+
+.zornet_ru_lisrum,
+.zornet_ru_lisrum * {
+  box-sizing: border-box;
+
+}
+.zornet_ru_lisrum {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.zornet_ru_lisrum img {
+  max-width: 100%;
+}
+.zornet_ru_lisrum .zornet_ru_lisrum-layer_bottom {
+  display: block;
+}
+.zornet_ru_lisrum .zornet_ru_lisrum-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.zornet_ru_lisrum:hover .zornet_ru_lisrum-layer_top,
+.zornet_ru_lisrum.active .zornet_ru_lisrum-layer_top {
+  opacity: 1;
+}
+.zornet_ru_lisrum .zornet_ru_lisrum-text {
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.zornet_ru_lisrum .zornet_ru_lisrum-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179);
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+.zornet_ru_lisrum.active .zornet_ru_lisrum-text_mobile {
+  display: block;
+}
+
+.zornet_ru_lisrum .zornet_ru_lisrum-layer_scale {
+  border-radius: 50%;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.zornet_ru_lisrum:hover .zornet_ru_lisrum-layer_scale,
+.zornet_ru_lisrum.active .zornet_ru_lisrum-layer_scale {
+  border-radius: 0%;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
